@@ -12,7 +12,7 @@ export default function Example() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 h-[90vh]">
+    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 sm:h-[90vh]">
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -166,7 +166,7 @@ export default function Example() {
                 checked={agreed}
                 onChange={setAgreed}
                 className={classNames(
-                  agreed ? "bg-indigo-600" : "bg-gray-200",
+                  agreed ? "bg-[#3b82f6]" : "bg-gray-200",
                   "flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                 )}
               >

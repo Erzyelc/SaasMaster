@@ -23,9 +23,9 @@ type Link = {
 };
 
 const links: Link[] = [
-  { text: "Features", url: "#" },
-  { text: "Pricing", url: "#" },
-  { text: "Contact", url: "#" },
+  { text: "Blog", url: "/Blog" },
+  { text: "Pricing", url: "/Pricing" },
+  { text: "Contact", url: "/Contact" },
 ];
 
 export function Footer() {
@@ -48,7 +48,7 @@ export function Footer() {
             <a
               key={index}
               href={icon.url}
-              className="flex h-5 w-5 items-center justify-center text-neutral-400 transition-all duration-100 ease-linear hover:text-neutral-900 hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-500 hover:dark:text-neutral-100"
+              className="flex h-5 w-5 items-center justify-center text-[#3b82f6] transition-all duration-100 ease-linear hover:text-[#3b82f6]/90 hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-500 hover:dark:text-neutral-100"
             >
               {icon.icon}
             </a>
@@ -60,7 +60,7 @@ export function Footer() {
           {links.map((link, index) => (
             <li
               key={index}
-              className="text-[15px]/normal font-medium text-neutral-400 transition-all duration-100 ease-linear hover:text-neutral-900 hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-400 hover:dark:text-neutral-100"
+              className="text-[15px]/normal font-medium text-neutral-400 transition-all duration-100 ease-linear hover:text-neutral-300 hover:underline hover:underline-offset-4 dark:font-medium dark:text-neutral-400 hover:dark:text-neutral-100"
             >
               <a href={link.url}>{link.text}</a>
             </li>

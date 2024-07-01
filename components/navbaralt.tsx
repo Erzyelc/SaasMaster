@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useRef, useState } from "react";
 
 import Link from "next/link";
+// import Dialogs from "./ui/dialog";
 
 const SCROLL_BOUNDARY = 120;
 
@@ -131,10 +132,22 @@ export function Navbaralt() {
                         transition: { ease: "easeOut", duration: 2.2 },
                       }}
                       transition={{ ease: "easeOut", duration: 0.5 }}
-                      href="/Contact"
                       className="cursor-pointer relative inline-flex w-fit shrink-0 items-center justify-center gap-x-1.5 overflow-hidden whitespace-nowrap rounded-full  bg-[#3b82f6]  hover:bg-[#3b82f6]/80 px-3 py-1.5 text-white outline-none dark:bg-white dark:text-black"
                     >
-                      Get Started
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                        />
+                      </svg>
                     </motion.a>
                   )}
                 </AnimatePresence>
@@ -142,6 +155,7 @@ export function Navbaralt() {
             </AnimatePresence>
           </ul>
         </motion.div>
+        {/* <Dialogs /> */}
       </div>
 
       <button className="z-50">
