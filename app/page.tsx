@@ -3,7 +3,7 @@
 import { Heroalt } from "@/components/Heroalt";
 import { CallToAction } from "@/components/cta";
 import Features from "@/components/features";
-import { Footer } from "@/components/footer";
+// import { Footer } from "@/components/footer";
 
 import { Logos } from "@/components/logos";
 import Pricing from "@/components/pricing";
@@ -28,7 +28,7 @@ export default function Home() {
       <Features />
       <Pricing />
       <CallToAction />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

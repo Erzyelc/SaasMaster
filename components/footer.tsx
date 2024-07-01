@@ -40,9 +40,7 @@ export function Footer() {
             height={20}
             width={20}
           />
-          <h2 className="text-lg font-bold text-[#3b82f6]  cursor-pointer z-50">
-            SaasMaster
-          </h2>
+          <h2 className="text-lg font-bold text-[#3b82f6]  z-50">SaasMaster</h2>
         </div>
 
         <div className="flex gap-x-2">
