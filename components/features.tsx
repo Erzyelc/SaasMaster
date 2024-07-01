@@ -10,11 +10,12 @@ import { AnimatedCard6 } from "./ui/animatedCard6";
 
 const Features = () => {
   return (
-    <div className=" sm:h-[80vh] relative  w-full flex items-center justify-center flex-col">
+    // sm:h-[80vh]
+    <div className="h-full relative  w-full flex items-center justify-center flex-col">
       <h1 className="text-center text-4xl font-bold tracking-tight text-[#3b82f6] sm:text-5xl pt-6">
         Some of our incredible features
       </h1>
-      <div className="z-40 flex flex-col  sm:grid sm:grid-cols-3 sm:grid-rows-2 gap-4 h-full px-10 py-10">
+      <div className="z-40 flex flex-col sm:grid sm:grid-cols-3 sm:grid-rows-2 gap-4 h-full px-10 py-10">
         <AnimatedCard />
         <AnimatedCard2 />
         <AnimatedCard3 />
@@ -24,7 +25,7 @@ const Features = () => {
         </div>
       </div>
 
-      <DotPattern className={cn()} />
+      <DotPattern className={cn("[]")} />
     </div>
   );
 };
