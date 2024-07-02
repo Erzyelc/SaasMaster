@@ -26,7 +26,7 @@ export function Heroalt() {
 
   return (
     <section id="hero ">
-      <div className="relative h-full overflow-hidden w-full py-14">
+      <div className="relative h-full overflow-hidden w-full py-14 ">
         <RetroGrid className="z-0" />
         <div className="z-10 flex flex-col">
           <div className="mt-20 grid grid-cols-1">

@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Navbaralt } from "@/components/navbaralt";
 import { Footer } from "@/components/footer";
+import Providers from "./providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,15 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        // className={`${inter.variable} bg-gradient-to-r from-slate-700 to-blue-500 `}
-        className={`${inter.variable} dark:bg-black`}
-      >
-        {/* <Navbar /> */}
-        <Navbaralt />
-        {children}
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} bg-white dark:bg-black`}>
+        <Providers>
+          <Navbaralt />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

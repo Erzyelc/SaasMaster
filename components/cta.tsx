@@ -174,7 +174,7 @@ export function CallToAction() {
               <div className="mx-auto size-24 rounded-[2rem]  bg-white/10 p-3 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32">
                 <HeartHandshake className="mx-auto size-16 text-black dark:text-white lg:size-24" />
               </div>
-              <div className="z-10 mt-4 flex flex-col items-center gap-6 text-center text-[#3b82f6]">
+              <div className="z-10 mt-4 flex flex-col items-center gap-4 text-center text-[#3b82f6]">
                 <h1 className="text-3xl font-bold lg:text-4xl">
                   Stop wasting time on design.
                 </h1>

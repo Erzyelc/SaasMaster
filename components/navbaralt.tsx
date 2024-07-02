@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useRef, useState } from "react";
 
 import Link from "next/link";
+import { Toggle } from "./toggle";
 // import Dialogs from "./ui/dialog";
 
 const SCROLL_BOUNDARY = 120;
@@ -74,7 +75,7 @@ export function Navbaralt() {
         {/* <Link href="/" className="text-[#3b82f6] font-bold cursor-pointer z-50">
           <button className="cursor-pointer z-50">SaasMaster</button>
         </Link> */}
-        <button className="z-50 text-[#3b82f6] font-bold cursor-pointer z-50">
+        <button className=" text-[#3b82f6] font-bold cursor-pointer z-50">
           <a href="/" className="z-50">
             SaasMaster
           </a>
@@ -165,15 +166,20 @@ export function Navbaralt() {
         </motion.div>
         {/* <Dialogs /> */}
       </div>
+      <div className=" flex items-center justify-center gap-6">
+        <button className="z-50">
+          <Toggle />
+        </button>
 
-      <button className="z-50">
-        <a
-          href="/Contact"
-          className="relative hidden w-fit bg-[#3b82f6] text-white hover:bg-[#3b82f6]/80  items-center justify-center gap-x-1.5 overflow-hidden rounded-full  px-3 py-1.5 dark:bg-[#3b82f6] dark:text-white lg:inline-flex"
-        >
-          Get Started
-        </a>
-      </button>
+        <button className="z-50 flex items-center justify-center gap-6">
+          <a
+            href="/Contact"
+            className="relative hidden w-fit bg-[#3b82f6] text-white hover:bg-[#3b82f6]/80  items-center justify-center gap-x-1.5 overflow-hidden rounded-full  px-3 py-1.5 dark:bg-[#3b82f6] dark:text-white lg:inline-flex"
+          >
+            Get Started
+          </a>
+        </button>
+      </div>
     </header>
   );
 }
