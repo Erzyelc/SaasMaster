@@ -33,7 +33,7 @@ export function Heroalt() {
             <div className="flex flex-col items-center gap-6 pb-8 text-center">
               <motion.h1
                 ref={fadeInRef}
-                className="text-balance bg-gradient-to-br from-slate-700 to-blue-500 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
+                className="text-balance bg-gradient-to-br from-slate-700 to-blue-500 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent dark:from-neutral-400 dark:to-blue-500 sm:text-6xl md:text-7xl lg:text-8xl"
                 animate={fadeInInView ? "animate" : "initial"}
                 variants={fadeUpVariants}
                 initial={false}
@@ -79,7 +79,7 @@ export function Heroalt() {
                   href="#"
                   className={cn(
                     // colors
-                    "bg-[#3b82f6] text-white shadow-2xl hover:bg-[#3b82f6]/80 dark:bg-white ",
+                    "bg-[#3b82f6] text-white shadow-2xl hover:bg-[#3b82f6]/80 dark:bg-[#3b82f6] ",
 
                     // layout
                     "group relative inline-flex h-9 w-full items-center justify-center gap-2 overflow-hidden whitespace-pre rounded-md px-4 py-2 text-base font-semibold tracking-tighter focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:flex",
@@ -95,7 +95,7 @@ export function Heroalt() {
                   href="#"
                   className={cn(
                     // colors
-                    "border border-[#3b82f6] bg-white text-[#3b82f6] hover:text-white shadow-2xl hover:bg-[#3b82f6] dark:bg-white ",
+                    "border border-[#3b82f6] bg-white text-[#3b82f6] hover:text-white dark:text-white shadow-2xl hover:bg-[#3b82f6] dark:bg-black ",
 
                     // layout
                     "group relative inline-flex h-9 w-full items-center justify-center gap-2 overflow-hidden whitespace-pre rounded-md px-4 py-2 text-base font-semibold tracking-tighter focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:flex",
@@ -143,7 +143,11 @@ export function Heroalt() {
             /> */}
             <img
               src="/hero-light.png"
-              className="relative block h-full w-full rounded-xl dark:hidden"
+              className="relative block h-full w-full rounded-xl border dark:hidden"
+            />
+            <img
+              src="/hero-dark.png"
+              className="relative hidden h-full w-full rounded-xl border dark:block"
             />
 
             <BorderBeam />

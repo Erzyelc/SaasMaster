@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         // className={`${inter.variable} bg-gradient-to-r from-slate-700 to-blue-500 `}
-        className={`${inter.variable} `}
+        className={`${inter.variable} dark:bg-black`}
       >
         {/* <Navbar /> */}
         <Navbaralt />

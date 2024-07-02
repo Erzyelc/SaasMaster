@@ -66,16 +66,21 @@ export function Navbaralt() {
       ref={fixedNavRef}
       className="mx-auto flex z-50 w-full max-w-5xl items-center justify-between bg-transparent px-10 py-7 dark:bg-transparent"
     >
-      <div className="hidden flex-row items-center justify-center gap-2 lg:flex">
+      <div className="hidden flex-row items-center justify-center gap-2 z-50 lg:flex">
         <a href="/" className="flex h-8 w-8 z-50 cursor-pointer">
           <img src="/logo.svg" className="h-full w-full" />
         </a>
 
-        <Link href="/" className="text-[#3b82f6] font-bold cursor-pointer z-50">
-          SaasMaster
-        </Link>
+        {/* <Link href="/" className="text-[#3b82f6] font-bold cursor-pointer z-50">
+          <button className="cursor-pointer z-50">SaasMaster</button>
+        </Link> */}
+        <button className="z-50 text-[#3b82f6] font-bold cursor-pointer z-50">
+          <a href="/" className="z-50">
+            SaasMaster
+          </a>
+        </button>
       </div>
-      {/* <h1 className="hidden lg:flex">Logo</h1> */}
+
       <div className="fixed inset-x-0 top-6 z-50 flex items-center justify-center">
         <motion.div
           initial={{ x: 0 }}
@@ -101,13 +106,16 @@ export function Navbaralt() {
                 <img src="/logo.svg" className="h-full w-full" />
               </a>
             </li>
-            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6]">
+            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
+              <a href="/">Home</a>
+            </li>
+            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/Blog">Blog</a>
             </li>
-            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6]">
+            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/Pricing">Pricing</a>
             </li>
-            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6]">
+            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/Contact">Contact</a>
             </li>
             <AnimatePresence>
@@ -161,7 +169,7 @@ export function Navbaralt() {
       <button className="z-50">
         <a
           href="/Contact"
-          className="relative hidden w-fit bg-[#3b82f6] text-white hover:bg-[#3b82f6]/80  items-center justify-center gap-x-1.5 overflow-hidden rounded-full  px-3 py-1.5 dark:bg-white dark:text-black lg:inline-flex"
+          className="relative hidden w-fit bg-[#3b82f6] text-white hover:bg-[#3b82f6]/80  items-center justify-center gap-x-1.5 overflow-hidden rounded-full  px-3 py-1.5 dark:bg-[#3b82f6] dark:text-white lg:inline-flex"
         >
           Get Started
         </a>
