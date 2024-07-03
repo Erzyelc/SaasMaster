@@ -174,7 +174,7 @@ export function CallToAction() {
               <div className="mx-auto size-24 rounded-[2rem]  bg-white/10 p-3 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32">
                 <HeartHandshake className="mx-auto size-16 text-black dark:text-white lg:size-24" />
               </div>
-              <div className="z-10 mt-4 flex flex-col items-center gap-4 text-center text-[#3b82f6]">
+              <div className="z-10 mt-4 flex flex-col items-center gap-6 text-center text-[#3b82f6]">
                 <h1 className="text-3xl font-bold lg:text-4xl">
                   Stop wasting time on design.
                 </h1>
@@ -183,7 +183,10 @@ export function CallToAction() {
                 </p>
 
                 <button className="z-50">
-                  <a className="  bg-[#3b82f6] text-white hover:bg-[#3b82f6]/80  items-center justify-center gap-x-1.5  rounded-full  px-3 py-1.5 dark:bg-[#3b82f6] dark:text-white ">
+                  <a
+                    href="/Contact"
+                    className="  bg-[#3b82f6] text-white hover:bg-[#3b82f6]/80  items-center justify-center gap-x-1.5  rounded-full  px-3 py-1.5 dark:bg-[#3b82f6] dark:text-white "
+                  >
                     Get Started
                   </a>
                 </button>

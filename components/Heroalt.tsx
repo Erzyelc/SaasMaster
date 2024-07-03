@@ -78,7 +78,7 @@ export function Heroalt() {
                 }}
               >
                 <a
-                  href="#"
+                  href="/SignUp"
                   className={cn(
                     // colors
                     "bg-[#3b82f6] text-white shadow-2xl hover:bg-[#3b82f6]/80 dark:bg-[#3b82f6] ",
@@ -94,10 +94,10 @@ export function Heroalt() {
                   <ChevronRight className="size-4 translate-x-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </a>
                 <a
-                  href="#"
+                  href="/LearnMore"
                   className={cn(
                     // colors
-                    "border border-[#3b82f6] bg-white text-[#3b82f6] hover:text-white dark:text-white shadow-2xl hover:bg-[#3b82f6] dark:bg-black ",
+                    "border border-[#3b82f6] bg-white text-[#3b82f6] hover:text-white dark:text-white shadow-2xl dark:hover:bg-[#3b82f6] hover:bg-[#3b82f6] dark:bg-black ",
 
                     // layout
                     "group relative inline-flex h-9 w-full items-center justify-center gap-2 overflow-hidden whitespace-pre rounded-md px-4 py-2 text-base font-semibold tracking-tighter focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:flex",
@@ -107,7 +107,6 @@ export function Heroalt() {
                   )}
                 >
                   Learn More
-                  <ChevronRight className="size-4 translate-x-0 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </a>
               </motion.div>
             </div>
