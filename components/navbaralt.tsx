@@ -170,7 +170,9 @@ export function Navbaralt() {
         {/* <Dialogs /> */}
       </div>
       <div className="z-50 flex items-center justify-center gap-6">
-        <Toggle />
+        <div className="hidden lg:inline-flex">
+          <Toggle />
+        </div>
 
         <button className="z-50 flex items-center justify-center gap-6">
           <a

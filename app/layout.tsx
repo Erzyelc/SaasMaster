@@ -28,12 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} bg-white dark:bg-black`}>
-        <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Providers attribute="class" defaultTheme="system">
           <Navbaralt />
           {children}
           <Footer />
