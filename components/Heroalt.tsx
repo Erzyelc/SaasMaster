@@ -33,7 +33,7 @@ export function Heroalt() {
             <div className="flex flex-col items-center gap-6 pb-8 text-center">
               <motion.h1
                 ref={fadeInRef}
-                className="text-balance bg-gradient-to-br from-slate-700 to-blue-500 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent dark:from-neutral-400 dark:to-blue-500 sm:text-6xl md:text-7xl lg:text-8xl"
+                className="text-balance bg-gradient-to-br from-slate-700 to-blue-500 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter sm:tracking-normal text-transparent dark:from-neutral-400 dark:to-blue-500 sm:text-6xl md:text-6xl lg:text-8xl"
                 animate={fadeInInView ? "animate" : "initial"}
                 variants={fadeUpVariants}
                 initial={false}
@@ -44,7 +44,9 @@ export function Heroalt() {
                   type: "spring",
                 }}
               >
-                Streamline Your Workflow <br /> with Our SaaS Platform <br />
+                Streamline Your Workflow
+                <br /> with Our SaaS Platform
+                <br />
               </motion.h1>
 
               <motion.p

@@ -94,7 +94,7 @@ export default function Pricing() {
             <RadioGroup
               value={frequency}
               onChange={setFrequency}
-              className="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200"
+              className="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset dark:ring-gray-800 ring-gray-400"
             >
               {frequencies.map((option) => (
                 <Radio
@@ -113,14 +113,14 @@ export default function Pricing() {
             </RadioGroup>
           </fieldset>
         </div>
-        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
           {tiers.map((tier) => (
             <div
               key={tier.id}
               className={classNames(
                 tier.mostPopular
-                  ? "ring-2 ring-indigo-600"
-                  : "ring-1 ring-gray-200",
+                  ? "ring-2 ring-[#3b82f6]"
+                  : "ring-1 dark:ring-gray-800 ring-gray-400",
                 "rounded-3xl p-8 xl:p-10"
               )}
             >
@@ -128,26 +128,28 @@ export default function Pricing() {
                 <h3
                   id={tier.id}
                   className={classNames(
-                    tier.mostPopular ? "text-indigo-600" : "text-gray-900",
+                    tier.mostPopular
+                      ? "text-[#3b82f6]"
+                      : "dark:text-gray-400 text-neutral-600",
                     "text-lg font-semibold leading-8"
                   )}
                 >
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                  <p className="rounded-full bg-blue-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-[#3b82f6]">
                     Most popular
                   </p>
                 ) : null}
               </div>
-              <p className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mt-4 text-sm leading-6 dark:text-gray-400 text-neutral-500">
                 {tier.description}
               </p>
               <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-gray-900">
+                <span className="text-4xl font-bold tracking-tight dark:text-gray-400 text-neutral-600">
                   {tier.price[frequency.value as keyof typeof tier.price]}
                 </span>
-                <span className="text-sm font-semibold leading-6 text-gray-600">
+                <span className="text-sm font-semibold leading-6 dark:text-gray-500 text-neutral-500">
                   {frequency.priceSuffix}
                 </span>
               </p>
@@ -157,7 +159,7 @@ export default function Pricing() {
                 className={classNames(
                   tier.mostPopular
                     ? "bg-[#3b82f6] text-white shadow-sm hover:bg-[#3b82f6]/80"
-                    : "   ring-[#3b82f6] hover:ring-[#3b82f6]",
+                    : "   ring-[#3b82f6] hover:ring-[#3b82f6] dark:bg-white bg-[#3b82f6]/30 dark:text-[#3b82f6] text-neutral-600 hover:bg-[#3b82f6]/10",
                   "mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 )}
               >
@@ -165,12 +167,12 @@ export default function Pricing() {
               </a>
               <ul
                 role="list"
-                className="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
+                className="mt-8 space-y-3 text-sm leading-6 dark:text-gray-400 text-neutral-500 xl:mt-10"
               >
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex gap-x-3">
                     <CheckIcon
-                      className="h-6 w-5 flex-none text-indigo-600"
+                      className="h-6 w-5 flex-none text-[#3b82f6]"
                       aria-hidden="true"
                     />
                     {feature}

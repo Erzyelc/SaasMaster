@@ -119,6 +119,9 @@ export function Navbaralt() {
             <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/Contact">Contact</a>
             </li>
+            <li className="flex items-center justify-center px-2 py-0.5 lg:hidden">
+              <Toggle />
+            </li>
             <AnimatePresence>
               <motion.div
                 initial={{ width: 0 }}
@@ -166,10 +169,8 @@ export function Navbaralt() {
         </motion.div>
         {/* <Dialogs /> */}
       </div>
-      <div className=" flex items-center justify-center gap-6">
-        <button className="z-50 hidden lg:inline-flex">
-          <Toggle />
-        </button>
+      <div className="z-50 flex items-center justify-center gap-6">
+        <Toggle />
 
         <button className="z-50 flex items-center justify-center gap-6">
           <a
