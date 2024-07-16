@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { BorderBeam } from "@/components/ui/border-beam";
-import RetroGrid from "@/components/ui/retro-grid";
+import RetroGrid from "@/components/magicui/retro-grid";
 import { motion, useInView } from "framer-motion";
 import { ChevronRight, Link } from "lucide-react";
 import { useRef } from "react";
@@ -122,7 +122,8 @@ export function Heroalt() {
               ease: [0.21, 0.47, 0.32, 0.98],
               type: "spring",
             }}
-            className="relative mx-auto mt-24 h-full w-full max-w-[1000px] rounded-xl border shadow-2xl"
+            // className="relative mx-auto mt-24 h-full w-full max-w-[1000px] rounded-xl border shadow-2xl"
+            className="relative mt-24 mx-auto h-full w-full rounded-xl max-w-[1000px] after:absolute after:inset-0 after:z-10 after:[background:linear-gradient(to_top,#fff_30%,transparent)] dark:after:[background:linear-gradient(to_top,#000000_30%,transparent)]"
           >
             <div
               className={cn(
@@ -135,13 +136,7 @@ export function Heroalt() {
                 "dark:[background-image:linear-gradient(to_bottom,#ffffff,transparent_30%)]"
               )}
             />
-            {/* <video
-              autoPlay
-              loop
-              muted
-              src="demo.mp4"
-              className="h-auto w-full"
-            /> */}
+
             <img
               src="/hero-light.png"
               className="relative block h-full w-full rounded-xl border dark:hidden"

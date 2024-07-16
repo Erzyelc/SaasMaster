@@ -5,6 +5,7 @@ import "./globals.css";
 import { Navbaralt } from "@/components/navbaralt";
 import { Footer } from "@/components/footer";
 import Providers from "./providers";
+import { DockMain } from "@/components/dockmain";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Providers attribute="class" defaultTheme="system">
           <Navbaralt />
           {children}
+          <DockMain />
           <Footer />
         </Providers>
       </body>

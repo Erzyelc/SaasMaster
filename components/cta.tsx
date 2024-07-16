@@ -27,7 +27,7 @@ import {
   Shield,
 } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
-import RetroGrid from "./ui/retro-grid";
+import RetroGrid from "./magicui/retro-grid";
 
 const tiles = [
   {

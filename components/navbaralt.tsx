@@ -107,9 +107,9 @@ export function Navbaralt() {
                 <img src="/logo.svg" className="h-full w-full" />
               </a>
             </li>
-            <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
+            {/* <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/">Home</a>
-            </li>
+            </li> */}
             <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/Blog">Blog</a>
             </li>
@@ -170,9 +170,9 @@ export function Navbaralt() {
         {/* <Dialogs /> */}
       </div>
       <div className="z-50 flex items-center justify-center gap-6">
-        <div className="hidden lg:inline-flex">
+        {/* <div className="hidden lg:inline-flex">
           <Toggle />
-        </div>
+        </div> */}
 
         <button className="z-50 flex items-center justify-center gap-6">
           <a
