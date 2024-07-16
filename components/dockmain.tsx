@@ -84,7 +84,7 @@ export function DockMain() {
                       "size-12 rounded-full"
                     )}
                   >
-                    <item.icon className="size-4" />
+                    <item.icon className="size-4 text-[#3b82f6]" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>

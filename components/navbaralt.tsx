@@ -119,9 +119,9 @@ export function Navbaralt() {
             <li className="hidden items-center justify-center px-2 py-0.5 lg:flex hover:text-black/40 text-[#3b82f6] dark:hover:text-neutral-400">
               <a href="/Contact">Contact</a>
             </li>
-            <li className="flex items-center justify-center px-2 py-0.5 lg:hidden">
+            {/* <li className="flex items-center justify-center px-2 py-0.5 lg:hidden">
               <Toggle />
-            </li>
+            </li> */}
             <AnimatePresence>
               <motion.div
                 initial={{ width: 0 }}
