@@ -65,7 +65,7 @@ export default function Pricing() {
   const [frequency, setFrequency] = useState(frequencies[0]);
 
   return (
-    <div className="bg-white  dark:bg-black py-24 sm:py-32  ">
+    <div className="bg-white  dark:bg-black py-24 sm:py-32">
       <div
         className="absolute inset-x-0  transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
