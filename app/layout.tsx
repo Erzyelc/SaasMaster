@@ -6,6 +6,7 @@ import { Navbaralt } from "@/components/navbaralt";
 import { Footer } from "@/components/footer";
 import Providers from "./providers";
 import { DockMain } from "@/components/dockmain";
+import { Navbar } from "@/components/navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,7 +31,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} bg-white dark:bg-black`}>
         <Providers attribute="class" defaultTheme="system">
-          <Navbaralt />
+          {/* <Navbaralt /> */}
+          <Navbar />
           {children}
           <DockMain />
           <Footer />

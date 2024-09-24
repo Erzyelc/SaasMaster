@@ -138,11 +138,11 @@ export function Heroalt() {
             />
 
             <img
-              src="/hero-light.png"
+              src="/header.jpg"
               className="relative block h-full w-full rounded-xl border dark:hidden"
             />
             <img
-              src="/hero-dark.png"
+              src="/header.jpg"
               className="relative hidden h-full w-full rounded-xl border dark:block"
             />
 
