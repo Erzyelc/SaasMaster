@@ -80,13 +80,10 @@ export function Heroalt() {
                 <a
                   href="/SignUp"
                   className={cn(
-                    // colors
                     "bg-[#3b82f6] text-white shadow-2xl hover:bg-[#3b82f6]/80 dark:bg-[#3b82f6] ",
 
-                    // layout
                     "group relative inline-flex h-9 w-full items-center justify-center gap-2 overflow-hidden whitespace-pre rounded-md px-4 py-2 text-base font-semibold tracking-tighter focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:flex",
 
-                    // animation
                     "transform-gpu ring-offset-current transition-all duration-300 ease-out   "
                   )}
                 >
@@ -96,13 +93,10 @@ export function Heroalt() {
                 <a
                   href="/LearnMore"
                   className={cn(
-                    // colors
                     "border border-[#3b82f6] bg-white text-[#3b82f6] hover:text-white dark:text-white shadow-2xl dark:hover:bg-[#3b82f6] hover:bg-[#3b82f6] dark:bg-black ",
 
-                    // layout
                     "group relative inline-flex h-9 w-full items-center justify-center gap-2 overflow-hidden whitespace-pre rounded-md px-4 py-2 text-base font-semibold tracking-tighter focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 md:flex",
 
-                    // animation
                     "transform-gpu ring-offset-current transition-all duration-300 ease-out   "
                   )}
                 >
@@ -122,17 +116,14 @@ export function Heroalt() {
               ease: [0.21, 0.47, 0.32, 0.98],
               type: "spring",
             }}
-            // className="relative mx-auto mt-24 h-full w-full max-w-[1000px] rounded-xl border shadow-2xl"
             className="relative mt-24 mx-auto h-full w-full rounded-xl max-w-[1000px] after:absolute after:inset-0 after:z-10 after:[background:linear-gradient(to_top,#fff_30%,transparent)] dark:after:[background:linear-gradient(to_top,#000000_30%,transparent)]"
           >
             <div
               className={cn(
                 "absolute inset-0 bottom-1/2 h-full w-full transform-gpu [filter:blur(120px)]",
 
-                // light styles
                 "[background-image:linear-gradient(to_bottom,#3b82f6,transparent_30%)]",
 
-                // dark styles
                 "dark:[background-image:linear-gradient(to_bottom,#ffffff,transparent_30%)]"
               )}
             />

@@ -1,19 +1,5 @@
-// import React from "react";
-// import { CallToAction } from "./ui/call";
-
-// const Cta = () => {
-//   return (
-//     <div className=" mx-auto flex items-center justify-center">
-//       <CallToAction />
-//     </div>
-//   );
-// };
-
-// export default Cta;
-
 "use client";
 
-// import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -71,12 +57,11 @@ const tiles = [
 const shuffleArray = (array: any[]) => {
   let currentIndex = array.length,
     randomIndex;
-  // While there remain elements to shuffle.
+
   while (currentIndex !== 0) {
-    // Pick a remaining element.
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
-    // And swap it with the current element.
+
     [array[currentIndex], array[randomIndex]] = [
       array[randomIndex],
       array[currentIndex],
@@ -128,7 +113,6 @@ export function CallToAction() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Ensures this runs client-side
       setRandomTiles1(shuffleArray([...tiles]));
       setRandomTiles2(shuffleArray([...tiles]));
       setRandomTiles3(shuffleArray([...tiles]));

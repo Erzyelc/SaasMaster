@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { Navbaralt } from "@/components/navbaralt";
 import { Footer } from "@/components/footer";
 import Providers from "./providers";
 import { DockMain } from "@/components/dockmain";
@@ -31,7 +30,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} bg-white dark:bg-black`}>
         <Providers attribute="class" defaultTheme="system">
-          {/* <Navbaralt /> */}
           <Navbar />
           {children}
           <DockMain />

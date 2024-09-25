@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 
 interface NavItem {
   name: string;
@@ -40,7 +41,13 @@ export function Navbar() {
         className="z-50 mx-auto flex w-fit relative rounded-full gap-6 border p-1.5 border-gray-300 dark:border-gray-700"
         ref={ref}
       >
-        <img src="/logo.svg" className="" />
+        <Image
+          src="/logo.svg"
+          className="pl-4"
+          width={35}
+          height={20}
+          alt="logo"
+        />
         {navs.map((item) => (
           <li
             key={item.name}
