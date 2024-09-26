@@ -38,7 +38,7 @@ export function Navbar() {
     <header className="w-full pt-10 flex flex-row ">
       <ul
         onMouseLeave={handleMouseLeave}
-        className="z-50 mx-auto flex w-fit relative rounded-full gap-6 border p-1.5 border-gray-300 dark:border-gray-700"
+        className="z-50 flex w-fit mx-auto relative rounded-full  border p-1.5 border-gray-300 dark:border-gray-700"
         ref={ref}
       >
         <Image
